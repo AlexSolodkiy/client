@@ -1,0 +1,52 @@
+.contacts{
+    position: relative;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.figur{
+    position: absolute;
+    z-index: -2;
+    width: 110%;
+    left: -5%;
+    top: 60%;
+    height: 110%;
+    transform: rotate(-10deg);
+    background-color: rgb(215, 215, 215);
+}
+/* .contacts-container{
+    display: flex;
+} */
+.contacts-title{
+    
+    margin-bottom: 2rem;
+    font-size: 30px;
+
+}
+.leftSide-contact{
+    margin: 1rem;
+}
+.leftSide-contact>p{
+    font-size: 20px;
+}
+.phone-number{
+    margin: 0.5rem;
+    
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapWrrap{
+    box-shadow: 10px -7px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.rightSide-contact{
+    display: flex;
+    margin-top: 2rem;
+}
+.social-link{
+    margin: 1rem;
+   
+}

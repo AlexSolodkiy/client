@@ -1,0 +1,34 @@
+.intro-home{
+    display: flex;
+    
+}
+.home-leftSide, .home-rightSide{
+    width: 50%;
+}
+
+.home-leftSide{
+    margin: 20px;
+    
+}
+.home-title{
+    margin: 2   rem;
+    font-size: 40px;
+    text-align: center;
+    color: green;
+}
+
+.home-desc{
+    font-size: 20px;
+    padding-right: 4rem;
+}
+.home-desc>p{
+    margin: 1rem;
+}
+.home-rightSide{
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/kaktus_tsvetok_kolyuchki_komnatnoe_rastenie_114052_1920x1080.jpg);
+}
+.home-catalog{
+    padding: 20px;
+}
