@@ -7,7 +7,7 @@ import { Component } from 'react';
 class Blog extends Component{
 
     state ={
-        blogArr:JSON.parse(localStorage.getItem("likes")) || posts
+        blogArr:JSON.parse(localStorage.getItem("postsArr   ")) || posts
     }
 
     likePost =pos =>{
@@ -18,15 +18,24 @@ class Blog extends Component{
                 blogArr:temp
             })
         
-            localStorage.setItem("likes",JSON.stringify(temp))
+            localStorage.setItem("postsArr",JSON.stringify(temp))
     }   
 
 
     deletePost = (pos) =>{
+        if(window.confirm(`Удалить ${this.state.blogArr[pos].title}? `)){
+            
+        const temp = [...this.state.blogArr];
+
+        temp.splice(pos,1);
+
+        this.setState({
+            blogArr:temp
+        })
+
+        localStorage.setItem("postsArr",JSON.stringify(temp))
+        }
         
-        // posts.splice(pos,1);
-        
-        console.log(posts)
     }
 
    
