@@ -17,15 +17,17 @@ export const BlogCard =({
     // localStorage.setItem('heart',JSON.stringify(fillHeart))
     return(
         <div  className="post">
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <p>
-                <FavoriteIcon style={{fill:heartFill}} onClick={likePost}/>
-                
-            </p>
-            <button className='deletePost' onClick={() => {deletePost()}}>
-                <DeleteIcon className='trash'/>
-            </button>
+            <div className="postContent">
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <p>
+                    <FavoriteIcon style={{fill:heartFill}} onClick={likePost}/>
+                    
+                </p>
+                <button className='deletePost' onClick={() => {deletePost()}}>
+                    <DeleteIcon className='trash'/>
+                </button>
+            </div>
          </div>
     )
 }
